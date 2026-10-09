@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DHEJA MART</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            DHEJA MART
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#">Categories</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="my-orders.html">My Orders</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Welcome to DHEJA MART</h1>
+
+            <p>
+                Your everyday shopping destination.
+            </p>
+
+            <button onclick="location.href='products.html'">
+                Shop Now
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Categories -->
+    <section class="categories">
+
+        <h2>Shop by Category</h2>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <h3>Fashion</h3>
+                <p>Clothing and accessories</p>
+            </div>
+
+            <div class="category-card">
+                <h3>Electronics</h3>
+                <p>Latest electronic products</p>
+            </div>
+
+            <div class="category-card">
+                <h3>Home</h3>
+                <p>Products for your home</p>
+            </div>
+
+            <div class="category-card">
+                <h3>Beauty</h3>
+                <p>Beauty and personal care</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Products -->
+    <section class="products" id="products">
+
+        <h2>Featured Products</h2>
+
+        <div class="product-container">
+
+
+            <!-- Product 1 -->
+            <div class="product-card">
+
+                <img src="images/T-shirt.jpg" alt="Cotton T-Shirt">
+
+                <h3>Cotton T-Shirt</h3>
+
+                <p class="price">₹499</p>
+
+                <button onclick="location.href='product.html?name=Cotton%20T-Shirt'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Cotton T-Shirt', 499)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card">
+
+                <img src="images/shoes.jpg" alt="Casual Shoes">
+
+                <h3>Casual Shoes</h3>
+
+                <p class="price">₹999</p>
+
+                <button onclick="location.href='product.html?name=Casual%20Shoes'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Casual Shoes', 999)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card">
+
+                <img src="images/travel-bag.jpg" alt="Travel Bag">
+
+                <h3>Travel Bag</h3>
+
+                <p class="price">₹799</p>
+
+                <button onclick="location.href='product.html?name=Travel%20Bag'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Travel Bag', 799)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card">
+
+                <img src="images/headphones.jpg" alt="Wireless Headphones">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="price">₹1499</p>
+
+                <button onclick="location.href='product.html?name=Wireless%20Headphones'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Wireless Headphones', 1499)">
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>DHEJA MART</h3>
+
+        <p>
+            A modern e-commerce marketplace for everyday shopping.
+        </p>
+
+        <p>
+            © 2026 DHEJA MART. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

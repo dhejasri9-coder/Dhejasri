@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Products - DHEJA MART</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            DHEJA MART
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="#">Categories</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="my-orders.html">My Orders</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Products Section -->
+    <main class="products-page">
+
+        <h1>All Products</h1>
+
+        <p class="products-subtitle">
+            Explore our collection of products
+        </p>
+
+
+        <!-- Search -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+                onkeyup="searchProducts()"
+            >
+
+        </div>
+
+
+        <!-- Product Grid -->
+        <div class="product-container" id="productContainer">
+
+
+            <!-- Product 1 -->
+            <div class="product-card" data-name="cotton t-shirt">
+
+                <img src="images/T-shirt.jpg" alt="Cotton T-Shirt">
+
+                <h3>Cotton T-Shirt</h3>
+
+                <p class="price">₹499</p>
+
+                <button onclick="location.href='product.html?name=Cotton%20T-Shirt'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Cotton T-Shirt', 499)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 2 -->
+            <div class="product-card" data-name="casual shoes">
+
+                <img src="images/shoes.jpg" alt="Casual Shoes">
+
+                <h3>Casual Shoes</h3>
+
+                <p class="price">₹999</p>
+
+                <button onclick="location.href='product.html?name=Casual%20Shoes'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Casual Shoes', 999)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 3 -->
+            <div class="product-card" data-name="travel bag">
+
+                <img src="images/travel-bag.jpg" alt="Travel Bag">
+
+                <h3>Travel Bag</h3>
+
+                <p class="price">₹799</p>
+
+                <button onclick="location.href='product.html?name=Travel%20Bag'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Travel Bag', 799)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+            <!-- Product 4 -->
+            <div class="product-card" data-name="wireless headphones">
+
+                <img src="images/headphones.jpg" alt="Wireless Headphones">
+
+                <h3>Wireless Headphones</h3>
+
+                <p class="price">₹1499</p>
+
+                <button onclick="location.href='product.html?name=Wireless%20Headphones'">
+                    View Product
+                </button>
+
+                <button
+                    class="cart-btn"
+                    onclick="addProductToCart('Wireless Headphones', 1499)"
+                >
+                    Add to Cart
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>DHEJA MART</h3>
+
+        <p>
+            A modern e-commerce marketplace for everyday shopping.
+        </p>
+
+        <p>
+            © 2026 DHEJA MART. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

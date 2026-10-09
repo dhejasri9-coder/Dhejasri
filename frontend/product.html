@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - DHEJA MART</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">DHEJA MART</div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="my-orders.html">My Orders</a>
+        </nav>
+    </header>
+
+    <main class="product-details">
+        <div class="details-image">
+            <img id="productImage" src="images/T-shirt.png"
+                 alt="Selected product">
+        </div>
+
+        <div class="details-info">
+            <p class="details-label">DHEJA MART COLLECTION</p>
+            <h1 id="productName">Cotton T-Shirt</h1>
+            <p id="productPrice" class="price">₹499</p>
+
+            <p id="productDescription">
+                A comfortable, everyday cotton T-shirt.
+            </p>
+
+            <p id="stockInfo">Availability: In stock</p>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity"
+                   value="1" min="1" max="15">
+
+            <div class="details-buttons">
+                <button id="addCartButton" class="details-cart-btn">
+                    Add to Cart
+                </button>
+                <button class="details-back-btn"
+                        onclick="location.href='products.html'">
+                    Continue Shopping
+                </button>
+            </div>
+
+            <p id="message" role="status"></p>
+        </div>
+    </main>
+
+    <footer>
+        <h3>DHEJA MART</h3>
+        <p>Your everyday shopping destination.</p>
+        <p>© 2026 DHEJA MART. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>
+```

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Order Confirmed - DHEJA MART</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            DHEJA MART
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">🛒 Cart</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Order Confirmation -->
+    <main class="order-confirmation">
+
+        <div class="confirmation-box">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h1>Order Confirmed!</h1>
+
+            <p class="confirmation-text">
+                Thank you for shopping with DHEJA MART.
+            </p>
+
+            <p>
+                Your order has been placed successfully.
+            </p>
+
+
+            <div class="order-details">
+
+                <p>
+                    <strong>Order ID:</strong>
+                    <span id="orderId"></span>
+                </p>
+
+                <p>
+                    <strong>Payment:</strong>
+                    <span id="paymentMethod"></span>
+                </p>
+
+                <p>
+                    <strong>Total Amount:</strong>
+                    <span id="orderTotal"></span>
+                </p>
+
+                <p>
+                    <strong>Status:</strong>
+                    Confirmed
+                </p>
+
+            </div>
+
+
+            <button
+                class="continue-shopping-btn"
+                onclick="location.href='products.html'">
+
+                Continue Shopping
+
+            </button>
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>DHEJA MART</h3>
+
+        <p>
+            Your everyday shopping destination.
+        </p>
+
+        <p>
+            © 2026 DHEJA MART. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

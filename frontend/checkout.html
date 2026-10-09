@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - DHEJA MART</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+
+        <div class="logo">
+            DHEJA MART
+        </div>
+
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="login.html">Login</a>
+            <a href="cart.html">🛒 Cart</a>
+            <a href="my-orders.html">My Orders</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Checkout Page -->
+    <main class="checkout-page">
+
+        <h1>Checkout</h1>
+
+
+        <!-- Delivery Details -->
+        <section class="checkout-section">
+
+            <h2>Delivery Details</h2>
+
+            <div class="checkout-form">
+
+                <label for="fullName">
+                    Full Name
+                </label>
+
+                <input
+                    type="text"
+                    id="fullName"
+                    placeholder="Enter your full name"
+                >
+
+
+                <label for="phone">
+                    Phone Number
+                </label>
+
+                <input
+                    type="tel"
+                    id="phone"
+                    placeholder="Enter your phone number"
+                >
+
+
+                <label for="address">
+                    Delivery Address
+                </label>
+
+                <textarea
+                    id="address"
+                    rows="4"
+                    placeholder="Enter your complete address"
+                ></textarea>
+
+
+                <label for="city">
+                    City
+                </label>
+
+                <input
+                    type="text"
+                    id="city"
+                    placeholder="Enter your city"
+                >
+
+
+                <label for="pincode">
+                    PIN Code
+                </label>
+
+                <input
+                    type="text"
+                    id="pincode"
+                    placeholder="Enter PIN code"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- Order Summary -->
+        <section class="checkout-section">
+
+            <h2>Order Summary</h2>
+
+            <div id="checkoutItems">
+                <!-- Cart items will appear here -->
+            </div>
+
+            <div class="checkout-total">
+
+                <span>Total Amount</span>
+
+                <strong id="checkoutTotal">
+                    ₹0
+                </strong>
+
+            </div>
+
+        </section>
+
+
+        <!-- Payment Method -->
+        <section class="checkout-section">
+
+            <h2>Payment Method</h2>
+
+            <div class="payment-options">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="cod"
+                        checked
+                    >
+                    Cash on Delivery
+                </label>
+
+                <label>
+                    <input
+                        type="radio"
+                        name="payment"
+                        value="online"
+                    >
+                    Online Payment
+                </label>
+
+            </div>
+
+        </section>
+
+
+        <!-- Place Order -->
+        <section class="place-order-section">
+
+            <button
+                class="place-order-btn"
+                onclick="placeOrder()"
+            >
+                Place Order
+            </button>
+
+            <p id="checkoutMessage"></p>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <h3>DHEJA MART</h3>
+
+        <p>
+            Your everyday shopping destination.
+        </p>
+
+        <p>
+            © 2026 DHEJA MART. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

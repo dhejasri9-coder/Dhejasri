@@ -1,0 +1,29 @@
+# Java / Spring Boot
+backend/target/
+backend/.mvn/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local environment files
+.env
+
+# Compiled C++ files
+*.exe
+
+# Java build output
+backend/target/
+
+# Local secrets and environment files
+application-local.properties
+*.env
+!.env.example
+
+# Python virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
