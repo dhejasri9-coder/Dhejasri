@@ -13,7 +13,7 @@ async function buyerLogin() {
     }
 
     try {
-        const response = await fetch("http://localhost:8080/api/users/login", {
+        const response = await fetch("https://dheja-mart-backend.onrender.com/api/users/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -60,7 +60,7 @@ async function registerUser() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/api/users/register", {
+        const response = await fetch("https://dheja-mart-backend.onrender.com/api/users/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -95,7 +95,7 @@ async function loadProducts() {
 
     try {
 
-        const response = await fetch("http://localhost:8080/api/products");
+        const response = await fetch("https://dheja-mart-backend.onrender.com/api/products");
 
         const products = await response.json();
 
@@ -564,7 +564,7 @@ async function placeOrder() {
 
     try {
         const response = await fetch(
-            "http://localhost:8080/api/orders",
+            "https://dheja-mart-backend.onrender.com/api/orders",
             {
                 method: "POST",
                 headers: {
@@ -714,7 +714,7 @@ async function displayMyOrders() {
     try {
         // Fetch orders belonging to this buyer.
         const response = await fetch(
-            `http://localhost:8080/api/orders?userId=${encodeURIComponent(userId)}`
+            `https://dheja-mart-backend.onrender.com/api/orders?userId=${encodeURIComponent(userId)}`
         );
 
         if (!response.ok) {
