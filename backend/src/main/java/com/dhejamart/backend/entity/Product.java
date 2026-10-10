@@ -1,9 +1,12 @@
+
 package com.dhejamart.backend.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.JoinColumn;
 
 @Entity
 public class Product {
@@ -17,6 +20,10 @@ public class Product {
     private double price;
     private String image;
     private int stock;
+
+    @ManyToOne
+    @JoinColumn(name = "seller_id")
+    private User seller;
 
     public Product() {
     }
@@ -67,5 +74,13 @@ public class Product {
 
     public void setStock(int stock) {
         this.stock = stock;
+    }
+
+    public User getSeller() {
+        return seller;
+    }
+
+    public void setSeller(User seller) {
+        this.seller = seller;
     }
 }
