@@ -19,14 +19,17 @@
             DHEJA MART
         </div>
 
-        <nav>
-            <a href="home.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="#">Categories</a>
-            <a href="login.html">Login</a>
-            <a href="cart.html">🛒 Cart</a>
-            <a href="my-orders.html">My Orders</a>
-        </nav>
+      ```html
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="#">Categories</a>
+        <a href="login.html">Login</a>
+        <a href="cart.html">🛒 Cart</a>
+        <a href="my-orders.html">My Orders</a>
+        <a href="#" onclick="logout()">Logout</a>
+    </nav>
+```
 
     </header>
 
@@ -201,6 +204,17 @@
 
 
     <script src="script.js"></script>
+    ```html
+<script>
+    function logout() {
+        localStorage.removeItem("userId");
+        localStorage.removeItem("username");
+        localStorage.removeItem("role");
+
+        window.location.href = "login.html";
+    }
+</script>
+```
 
 </body>
 
